@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+</style>
+</head>
+<!--Esse é o cérebro, onde as principais informações do código ficam-->
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------>
+<body style="background-color: rgb(63, 63, 63);"> 
+<div class="container">
+    <div class="quadrado"></div>
+    <div class="QuadroP"></div>  
+    <div class="texto">Crônicas de Baudson
+     
+        
+</div>
+<br />
+<br />
+<br />
+<!------------------------------------------------------------------------->
+
+
+
+<div class="container4">
+    <img src="img/dog.png" width="200px" height="250px" style="margin-left: 20px;" onclick="AbrirCapitulos()">
+    <div class="resumo"><h1><pre> Vínculos de vida</h1>
+    <h4 style="margin-left: 20px;">A vida do jovem Dimas muda drasticamente após a morte de seu irmão mais velho, fazendo-o ganhar poderes, ao mesmo tempo que ele é recrutado por duas organizações distintas, colocando-o em um impasse
+    </h4>
+    </pre></div>
+</div>
+
+
+
+<div id="Caps" class="Caps">
+    <!---------------------------Capitulos--------------------------->
+    <div class="container5">
+        <div id="Capitulos" class="Capitulos"><a href="H1C1.html">Capítulo #1, o ladrão em verde</a>
+        </div>
+    
+    <!---------------------------Capitulos--------------------------->
+
+</div>
+<div id="Overlay" class="Overlay"></div>
+<img id="Sair" class="Sair" onclick="FecharCapitulos()"></div>></div>
+
+
+
+
+
+
+
+
+
+
+<!---------------------------Java script, comandos não-padrões de HTML--------------------------->
+
+<script>
+    function AbrirCapitulos(){
+        document.getElementById("Caps").style.display ="flex";
+        document.getElementById("Overlay").style.display ="flex";
+        document.getElementById("Sair").style.display ="flex";
+    }
+    function FecharCapitulos(){
+        document.getElementById("Caps").style.display = "none";
+        document.getElementById("Overlay").style.display ="none";
+        document.getElementById("Sair").style.display ="none";
+    }
+</script>
+
+
+</body>
+
+<!--Esse é o corpo, a parte em que executa as informações mandadas pelo cérebro-->
+</html>
